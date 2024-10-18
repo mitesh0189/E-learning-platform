@@ -1,0 +1,59 @@
+/* CardItem.css */
+
+.cards__item {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    margin: 15px; /* Margin around each card */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth scale effect */
+  }
+  
+  .cards__item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .cards__item__link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  .cards__item__pic-wrap {
+    position: relative; /* Relative positioning for overlay */
+  }
+  
+  .cards__item__img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .cards__item__pic-wrap:hover .cards__item__img {
+    transform: scale(1.1); /* Slightly zoom in on hover */
+  }
+  
+  .cards__item__info {
+    padding: 20px; /* Padding for the info section */
+    background-color: #fff; /* White background */
+    border-radius: 0 0 10px 10px; /* Rounded corners for the bottom */
+  }
+  
+  .cards__item__text {
+    font-size: 1.2rem; /* Font size for the text */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark color for text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards__item {
+      margin: 10px; /* Adjust margin on smaller screens */
+    }
+  
+    .cards__item__text {
+      font-size: 1rem; /* Adjust font size on smaller screens */
+    }
+  }
+  
